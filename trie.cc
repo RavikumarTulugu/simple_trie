@@ -1,5 +1,3 @@
-#include<boost/filesystem.hpp>
-#include<string.h>
 #include<stdio.h>
 
 class Trie
