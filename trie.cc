@@ -1,24 +1,6 @@
-
 #include<boost/filesystem.hpp>
 #include<string.h>
 #include<stdio.h>
-
-using namespace boost;
-
-bool
-isDisjoint(char *p1, char *p2)
-{
-	unsigned int slashCount2 = 0, slashCount1 = 0;
-	for(char *ptr1 = p1, *ptr2 = p2;(*ptr1 && *ptr2); ptr1++, ptr2++) {
-		if ((*ptr1 != *ptr2) && (slashCount1 == slashCount2)) 
-			return true;
-		if (*ptr1 == '/') 
-			slashCount1++;
-		if (*ptr2 == '/') 
-			slashCount2++;
-	}
-	return false;
-}
 
 class Trie
 {
